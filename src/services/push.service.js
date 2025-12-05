@@ -6,6 +6,6 @@ export const sendPushNotification = async (token, title, body, data = {}) => {
     notification: { title, body },
     data
   };
-
+  console.log("Sending Push Notification:", message);
   return admin.messaging().send(message);
 };
