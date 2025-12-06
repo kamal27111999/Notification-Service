@@ -3,7 +3,6 @@ import { pushHandler } from "../controllers/notification.controller.js";
 
 const router = express.Router();
 
-// ---- PUSH NOTIFICATIONS (FCM) ----
 router.post("/push", pushHandler);
 
 // You can add more routes later:
